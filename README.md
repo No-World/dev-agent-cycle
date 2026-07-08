@@ -10,7 +10,11 @@ A Claude Code skill that transforms Claude into a project manager (PM) who orche
 
 ## Installation
 
-Clone into your skills directory.
+```bash
+npx skills add No-World/dev-agent-cycle
+```
+
+Or clone into your skills directory.
 
 ---
 
@@ -82,7 +86,9 @@ Cycle Complete → notify user
 
 ```
 dev-agent-cycle/
-├── SKILL.md                 # Skill definition (the agent's instructions)
+├── .agent/
+│   └── instructions.md      # Core prompt (skills.sh compatible)
+├── SKILL.md                 # Skill definition (Claude Code compatible)
 ├── README.md                # English readme
 ├── README.zh.md             # Chinese readme
 └── templates/               # Skeleton files for project bootstrapping
@@ -105,4 +111,3 @@ dev-agent-cycle/
         ├── doc-sync-closeout.md
         └── review-doc-changes.md
 ```
-

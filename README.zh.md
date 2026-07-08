@@ -10,7 +10,11 @@
 
 ## 安装
 
-克隆到 skills 目录即可。
+```bash
+npx skills add No-World/dev-agent-cycle
+```
+
+或克隆到 skills 目录即可。
 
 ---
 
@@ -85,7 +89,9 @@
 
 ```
 dev-agent-cycle/
-├── SKILL.md                 # 技能定义（Agent 的指令）
+├── .agent/
+│   └── instructions.md      # 核心 Prompt（skills.sh 兼容）
+├── SKILL.md                 # 技能定义（Claude Code 兼容）
 ├── README.md                # 英文说明文档
 ├── README.zh.md             # 中文说明文档
 └── templates/               # 项目引导模板
@@ -108,4 +114,3 @@ dev-agent-cycle/
         ├── doc-sync-closeout.md
         └── review-doc-changes.md
 ```
-
