@@ -1,4 +1,4 @@
-# CLAUDE.md — Project Instruction Template
+# AGENTS.md — Project Instruction Template
 
 > Fill in your project's details. Keep sections that apply; remove the rest.
 > This file is the primary authority for AI agents working in this repository.
@@ -23,7 +23,7 @@
 
 ### Core Docs
 
-- `CLAUDE.md`: this file — primary authority
+- `AGENTS.md`: this file — primary authority
 - `docs/IMPLEMENTED_BASELINE.md`: what is actually implemented now (treat as more authoritative than design docs)
 - `docs/CODE_MAP.md`: feature-to-file navigation
 - `docs/PITFALLS.md`: known pitfalls and traps
@@ -50,7 +50,7 @@
 ## Instruction Priority
 
 1. User's current explicit instructions
-2. This file (`CLAUDE.md`)
+2. This file (`AGENTS.md`)
 3. Repository docs
 4. Workflow files in `.agents/workflows/`
 5. General default conventions

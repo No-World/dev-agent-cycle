@@ -4,7 +4,7 @@
 
 [English](README.md) | 简体中文
 
-一个 Claude Code 技能，将 Claude 转变为产品经理（PM），编排结构化、有门控的多 Agent 开发闭环。支持三条执行车道（Fast / Standard / Spec）、Todo 驱动规划、多层评审门控、验证与失败恢复、以及文档同步。
+一个通用的多 Agent 开发技能，将你的 AI 编程助手转变为产品经理（PM），编排结构化、有门控的多 Agent 开发闭环。支持三条执行车道（Fast / Standard / Spec）、Todo 驱动规划、多层评审门控、验证与失败恢复、以及文档同步。
 
 ---
 
@@ -81,7 +81,7 @@ npx skills add No-World/dev-agent-cycle
 - **验证失败恢复** — 分类、继续/停止决策、回滚协议、补丁螺旋检测
 - **文档同步** — 每次变更后检查清单驱动的文档更新
 - **双语支持** — 中英文触发词和模板
-- **项目引导** — 自动生成项目 harness 文件（CLAUDE.md、docs、todos、workflows）
+- **项目引导** — 自动生成项目 harness 文件（AGENTS.md、docs、todos、workflows）
 
 ---
 
@@ -91,11 +91,11 @@ npx skills add No-World/dev-agent-cycle
 dev-agent-cycle/
 ├── .agent/
 │   └── instructions.md      # 核心 Prompt（skills.sh 兼容）
-├── SKILL.md                 # 技能定义（Claude Code 兼容）
+├── SKILL.md                 # 技能定义
 ├── README.md                # 英文说明文档
 ├── README.zh.md             # 中文说明文档
 └── templates/               # 项目引导模板
-    ├── CLAUDE.md            # 项目指令模板
+    ├── AGENTS.md            # 项目指令模板
     ├── docs/                # 文档模板
     │   ├── IMPLEMENTED_BASELINE.md
     │   ├── CODE_MAP.md

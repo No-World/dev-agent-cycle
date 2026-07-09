@@ -35,7 +35,7 @@ For each missing file, read the template from `templates/` in this skill's direc
 
 | File | Role | Template |
 |------|------|----------|
-| `CLAUDE.md` or `AGENTS.md` | Primary project authority | `templates/CLAUDE.md` |
+| `CLAUDE.md` or `AGENTS.md` | Primary project authority | `templates/AGENTS.md` |
 | `docs/IMPLEMENTED_BASELINE.md` | What's actually built | `templates/docs/IMPLEMENTED_BASELINE.md` |
 | `docs/CODE_MAP.md` | Feature-to-file navigation | `templates/docs/CODE_MAP.md` |
 | `docs/PITFALLS.md` | Known traps | `templates/docs/PITFALLS.md` |
@@ -60,7 +60,7 @@ The following process workflows live in the skill's `templates/workflows/`. The 
 | `templates/workflows/review-doc-changes.md` | Step 5 (doc review) |
 | `templates/workflows/fix-bug-workflow.md` | Bug fix scenarios |
 
-**Bootstrap rule**: if more than half of the project-local files are missing, pause and ask in the user's language: "This project is missing most of its harness files. Should I bootstrap a full skeleton from the dev-agent-cycle templates?" If yes, create all missing project-local files from `templates/`. If the user says essentials only, create at minimum: CLAUDE.md, IMPLEMENTED_BASELINE.md, CODE_MAP.md, PITFALLS.md, single-iteration-todolist.md, and full-stack-verify.md.
+**Bootstrap rule**: if more than half of the project-local files are missing, pause and ask in the user's language: "This project is missing most of its harness files. Should I bootstrap a full skeleton from the dev-agent-cycle templates?" If yes, create all missing project-local files from `templates/`. If the user says essentials only, create at minimum: CLAUDE.md (or AGENTS.md), IMPLEMENTED_BASELINE.md, CODE_MAP.md, PITFALLS.md, single-iteration-todolist.md, and full-stack-verify.md.
 
 ---
 

@@ -4,7 +4,7 @@
 
 English | [简体中文](README.zh.md)
 
-A Claude Code skill that transforms Claude into a project manager (PM) who orchestrates a structured, gated multi-agent development cycle. Supports three execution lanes (Fast / Standard / Spec), todo-driven planning, multi-layer review gates, verification with failure recovery, and documentation sync.
+A generic multi-agent development skill that turns your AI coding assistant into a project manager (PM) who orchestrates a structured, gated multi-agent development cycle. Supports three execution lanes (Fast / Standard / Spec), todo-driven planning, multi-layer review gates, verification with failure recovery, and documentation sync.
 
 ---
 
@@ -78,7 +78,7 @@ Cycle Complete → notify user
 - **Verification failure recovery** — classify, decide continue/stop, rollback protocol, patch-spiral detection
 - **Documentation sync** — checklist-driven doc updates after every change
 - **Bilingual** — English + Chinese trigger phrases and templates
-- **Bootstrap** — auto-generates project harness files (CLAUDE.md, docs, todos, workflows)
+- **Bootstrap** — auto-generates project harness files (AGENTS.md, docs, todos, workflows)
 
 ---
 
@@ -88,11 +88,11 @@ Cycle Complete → notify user
 dev-agent-cycle/
 ├── .agent/
 │   └── instructions.md      # Core prompt (skills.sh compatible)
-├── SKILL.md                 # Skill definition (Claude Code compatible)
+├── SKILL.md                 # Skill definition
 ├── README.md                # English readme
 ├── README.zh.md             # Chinese readme
 └── templates/               # Skeleton files for project bootstrapping
-    ├── CLAUDE.md            # Project instruction template
+    ├── AGENTS.md            # Project instruction template
     ├── docs/                # Documentation templates
     │   ├── IMPLEMENTED_BASELINE.md
     │   ├── CODE_MAP.md
